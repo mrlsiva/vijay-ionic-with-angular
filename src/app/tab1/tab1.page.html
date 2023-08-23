@@ -13,7 +13,7 @@
         </ion-toolbar>
     </ion-header>
     <div *ngIf="jsonData">
-        <ion-card *ngFor="let item of jsonData.user.slice().reverse()">
+        <ion-card *ngFor="let item of jsonData.user.slice().reverse()" (click)="showMovieDetails(item)">
             <!-- <img alt="Silhouette of mountains" src="../../assets/icon/favicon.png" /> -->
             <ion-card-header>
               <ion-card-subtitle>{{ item.Director }} in</ion-card-subtitle>

@@ -1,0 +1,36 @@
+
+  <!-- {{ movie.MovieName }} -->
+  <ion-card>
+    <!-- <img alt="Silhouette of mountains" src="../../assets/icon/favicon.png" /> -->
+    <ion-card-header>
+      <ion-card-subtitle>{{ movie.Director }} in</ion-card-subtitle>
+      <ion-card-title>{{movie.MovieName}}</ion-card-title>
+
+    </ion-card-header>
+    <ion-card-content>
+      Year : {{ movie.Year }}
+  </ion-card-content><ion-card-content>
+    Role : {{ movie.Role }}
+</ion-card-content><ion-card-content>
+  Producer : {{ movie.Producer }}
+</ion-card-content><ion-card-content>
+  Music : {{ movie.Music }}
+</ion-card-content><ion-card-content>
+  Releasedate : {{ movie.Releasedate }}
+</ion-card-content>
+<ion-card-content>
+  Releasedate : {{ movie.Releasedate }}
+</ion-card-content>
+<ion-card-content>
+  Runningtime : {{ movie.Runningtime }}
+</ion-card-content>
+    <ion-card-content>
+      Language : {{ movie.Language }}
+    </ion-card-content>
+    <ion-card-content>
+      Cast : {{ movie.Cast }}
+  </ion-card-content>
+
+  </ion-card>
+<button class="btn" fxHide (click)="goBack()">Back</button>
+
