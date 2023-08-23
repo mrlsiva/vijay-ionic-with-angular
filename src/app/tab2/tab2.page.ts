@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { JsonService } from '../json.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  jsonData: any;
+  constructor(private jsonService: JsonService) {}
+  ngOnInit() {
+    this.jsonService.getJsonData().subscribe(data => {
+      this.jsonData = data;
+      console.log(this.jsonData);
+    });
+  }
+  videoId: string = 'v=2AnaCDISHPs';
 
 }
