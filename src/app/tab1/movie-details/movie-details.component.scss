@@ -1,3 +1,30 @@
-.btn {
-    height: 36px;
+@import '../../../assets/scss/variable.scss';
+
+.movie-details {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    margin: 0;
+    background-color: $secondary-color;
+    padding-bottom: 58px;
+}
+.left-arrow {
+    width: 18px;
+    margin-right: 4px;
+    height: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+ion-card-header {
+    padding: 0;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+ion-card-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
 }

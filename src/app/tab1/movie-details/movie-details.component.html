@@ -1,36 +1,38 @@
+<ion-card class="movie-details">
+  <ion-card-header>
+    <ion-card-title>
+      <ion-img class="bg" src="../../../assets/images/vijay/error_img/banner.png" alt=""></ion-img>
+      <ion-img (click)="goBack()" class="left-arrow" src="../../../assets/images/svg/arrow-left-line.svg"
+        alt=""></ion-img>
 
-  <!-- {{ movie.MovieName }} -->
-  <ion-card>
-    <!-- <img alt="Silhouette of mountains" src="../../assets/icon/favicon.png" /> -->
-    <ion-card-header>
-      <ion-card-subtitle>{{ movie.Director }} in</ion-card-subtitle>
-      <ion-card-title>{{movie.MovieName}}</ion-card-title>
+    </ion-card-title>
 
-    </ion-card-header>
-    <ion-card-content>
-      Year : {{ movie.Year }}
-  </ion-card-content><ion-card-content>
+  </ion-card-header>
+  <ion-grid class="pt-30">
+    
+  <ion-card-content>{{movie.MovieName}}</ion-card-content>
+  <ion-card-content> Director : {{ movie.Director }} </ion-card-content>
+
+  <ion-card-content> Year : {{ movie.Year }}</ion-card-content>
+  <ion-card-content>
     Role : {{ movie.Role }}
-</ion-card-content><ion-card-content>
-  Producer : {{ movie.Producer }}
-</ion-card-content><ion-card-content>
-  Music : {{ movie.Music }}
-</ion-card-content><ion-card-content>
-  Releasedate : {{ movie.Releasedate }}
-</ion-card-content>
-<ion-card-content>
-  Releasedate : {{ movie.Releasedate }}
-</ion-card-content>
-<ion-card-content>
-  Runningtime : {{ movie.Runningtime }}
-</ion-card-content>
-    <ion-card-content>
-      Language : {{ movie.Language }}
-    </ion-card-content>
-    <ion-card-content>
-      Cast : {{ movie.Cast }}
+  </ion-card-content><ion-card-content>
+    Producer : {{ movie.Producer }}
+  </ion-card-content><ion-card-content>
+    Music : {{ movie.Music }}
+  </ion-card-content><ion-card-content>
+    Releasedate : {{ movie.Releasedate }}
   </ion-card-content>
-
-  </ion-card>
-<button class="btn" fxHide (click)="goBack()">Back</button>
-
+  <ion-card-content>
+    Releasedate : {{ movie.Releasedate }}
+  </ion-card-content>
+  <ion-card-content>
+    Runningtime : {{ movie.Runningtime }}
+  </ion-card-content>
+  <ion-card-content>
+    Language : {{ movie.Language }}
+  </ion-card-content>
+  <ion-card-content>
+    Cast : {{ movie.Cast }}</ion-card-content>
+  </ion-grid>
+</ion-card>

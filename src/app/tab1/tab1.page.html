@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
-    <ion-toolbar>
+<ion-header  [translucent]="true">
+    <ion-toolbar class="header">
         <ion-title>
-            Vijay Movies
+            Vijay rasigan
         </ion-title>
     </ion-toolbar>
 </ion-header>
@@ -18,9 +18,7 @@
             <ion-card-header>
               <ion-card-subtitle>{{ item.Director }} in</ion-card-subtitle>
               <ion-card-title>{{item.MovieName}}</ion-card-title>
-
             </ion-card-header>
-          
             <ion-card-content>
                 Cast : {{ item.Cast }}
             </ion-card-content>
@@ -29,12 +27,5 @@
     <div *ngIf="!jsonData">
         Loading data...
     </div>
-    
-    <!-- <ion-list *ngIf="jsonData">
-        <ion-item *ngFor="let item of jsonData.user">
-            {{ item.MovieID }} : {{ item.MovieName }}
-        </ion-item>
-    </ion-list>
-     -->
     <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>

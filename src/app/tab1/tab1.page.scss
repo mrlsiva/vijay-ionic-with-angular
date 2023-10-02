@@ -1,4 +1,16 @@
+@import '../../assets/scss/variable.scss';
+
 .body {
     // max-height: calc(100vh - 200px);
     padding-bottom: 54px;
+}
+.header {
+    color: $secondary-color;
+    --background: var(--ion-toolbar-background, var(--ion-background-color, #facc22));
+
+}
+ion-card-title{
+    color: $secondary-color;
+    font-size: 22px;
+    font-weight: 600;
 }
