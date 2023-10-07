@@ -7,14 +7,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-header collapse="condense">
-        <ion-toolbar>
-            <ion-title size="large">Tab 11</ion-title>
-        </ion-toolbar>
-    </ion-header>
+
     <div *ngIf="jsonData">
         <ion-card *ngFor="let item of jsonData.user.slice().reverse()" (click)="showMovieDetails(item)">
-            <!-- <img alt="Silhouette of mountains" src="../../assets/icon/favicon.png" /> -->
+
             <ion-card-header>
               <ion-card-subtitle>{{ item.Director }} in</ion-card-subtitle>
               <ion-card-title>{{item.MovieName}}</ion-card-title>

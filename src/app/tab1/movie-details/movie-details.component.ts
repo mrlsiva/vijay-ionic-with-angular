@@ -8,13 +8,19 @@ import { NavController } from '@ionic/angular';
 })
 export class MovieDetailsComponent  implements OnInit {
   movie: any;
-
+  showLoader = true;
+  loaderImage = '../../../assets/images/vijay/error_img/banner.png';
   constructor(private route: ActivatedRoute, private navCtrl: NavController) {}
 
   ngOnInit() {
     this.movie = history.state.movie;
-  console.log(this.movie);
+    console.log(this.movie);
   };
+
+  showMainImage() {
+    this.showLoader = false;
+  }
+  
 
   goBack() {
     this.navCtrl.back();

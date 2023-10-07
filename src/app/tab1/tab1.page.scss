@@ -4,7 +4,7 @@
     // max-height: calc(100vh - 200px);
     padding-bottom: 54px;
 }
-.header {
+.header, ion-header {
     color: $secondary-color;
     --background: var(--ion-toolbar-background, var(--ion-background-color, #facc22));
 

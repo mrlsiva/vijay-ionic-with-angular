@@ -1,7 +1,11 @@
 <ion-card class="movie-details">
   <ion-card-header>
     <ion-card-title>
-      <ion-img class="bg" src="../../../assets/images/vijay/error_img/banner.png" alt=""></ion-img>
+
+      <ion-img class="bg" [src]="movie.Bigimg" alt="" (load)="showMainImage()"></ion-img>
+      <img [src]="loaderImage" alt="Loader" [hidden]="!showLoader">
+
+{{showLoader}}
       <ion-img (click)="goBack()" class="left-arrow" src="../../../assets/images/svg/arrow-left-line.svg"
         alt=""></ion-img>
 
