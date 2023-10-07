@@ -9,7 +9,7 @@ const config: CapacitorConfig = {
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 3
+      "launchShowDuration": 6
     }
   }
 };
